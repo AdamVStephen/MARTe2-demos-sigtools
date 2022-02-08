@@ -1,0 +1,64 @@
+record( longin, "STapp-0004-3:STATUS")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "STapp-0004-3:COMMAND")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "STapp-0004-3:RESET")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( ai, "STapp-0004-3:MEASUREMENT0")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( waveform, "STapp-0004-3:HIST-IDLE-CT")
+{
+   field(DTYP, "Soft Channel")
+   field(NELM, 10)
+   field(FTVL, "LONG")
+}
+
+record( waveform, "STapp-0004-3:HIST-RUN-CT")
+{
+   field(DTYP, "Soft Channel")
+   field(NELM, 10)
+   field(FTVL, "LONG")
+}
+
+record( longin, "STapp-0004-3:TIME")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "STapp-0004-3:COUNTER")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( ai, "STapp-0004-3:ADC0S")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( ai, "STapp-0004-3:ADC1S")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( ai, "STapp-0004-3:ADC2S")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( ai, "STapp-0004-3:ADC3S")
+{
+   field(DTYP, "Soft Channel")
+}
+
