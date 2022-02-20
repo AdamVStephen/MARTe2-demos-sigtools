@@ -5,12 +5,21 @@
 SCRIPT="$0"
 SCRIPT_DIR=$(dirname $(realpath "$SCRIPT"))
 SETENV_SCRIPT_PATH="$SCRIPT_DIR/setenv.sh"
+COMPLETION_SCRIPT="$SCRIPT_DIR/m2-completion.bash"
 
 if [ -f "$SETENV_SCRIPT_PATH" ]
 then
 	source "$SETENV_SCRIPT_PATH"
 else
 	echo "$SETENV_SCRIPT_PATH not found.  Bailing out"
+	exit 54
+fi
+
+if [ -f "$COMPLETION_SCRIPT" ]
+then
+	source "$COMPLETION_SCRIPT"
+else
+	echo "$COMPLETION_SCRIPT not found.  Bailing out"
 	exit 54
 fi
 
