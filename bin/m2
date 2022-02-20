@@ -22,7 +22,7 @@ else
 fi
 
 export WD=${MARTe2_Demos_Sigtools_DIR}/Startup
-export CFG_DIR=${MARTe2_Demos_Sigtools_DIR}/Configuration
+export CFG_DIR=${MARTe2_Demos_Sigtools_DIR}/Configurations
 
 # If there is no argument, defaults are invoke for the most recent .cfg file and 
 # start with -s Run

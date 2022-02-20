@@ -24,6 +24,6 @@ else
 fi
 
 export WD=${MARTe2_Demos_Sigtools_DIR}/Startup
-export CFG_DIR=${MARTe2_Demos_Sigtools_DIR}/Configuration
+export CFG_DIR=${MARTe2_Demos_Sigtools_DIR}/Configurations
 
 exec "bash"
