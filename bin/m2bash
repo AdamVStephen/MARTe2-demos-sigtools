@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# MARTe2 bash shell with environment set.
+#
+SCRIPT="$0"
+SCRIPT_DIR=$(dirname $(realpath "$SCRIPT"))
+SETENV_SCRIPT_PATH="$SCRIPT_DIR/setenv.sh"
+
+if [ -f "$SETENV_SCRIPT_PATH" ]
+then
+	source "$SETENV_SCRIPT_PATH"
+else
+	echo "$SETENV_SCRIPT_PATH not found.  Bailing out"
+	exit 54
+fi
+
+export WD=${MARTe2_Demos_Sigtools_DIR}/Startup
+export CFG_DIR=${MARTe2_Demos_Sigtools_DIR}/Configuration
+
+exec "bash"
