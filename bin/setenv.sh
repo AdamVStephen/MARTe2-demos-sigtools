@@ -14,7 +14,8 @@ export SCRIPT_NAME=$(basename "$SCRIPT_REALPATH")
 export SCRIPT_DIR=$(dirname "$SCRIPT_REALPATH")
 
 export PATH=$PATH:${SCRIPT_DIR}
-export INSTALLATION_DIR=$(realpath "$SCRIPT_DIR/../../")
+export RELATIVE_INSTALLATION_DIR=$(realpath "$SCRIPT_DIR/../../../")
+export INSTALLATION_DIR=${INSTALLATION_DIR:-$RELATIVE_INSTALLATION_DIR}
 
 export MARTe2_PROJECT_ROOT=${INSTALLATION_DIR}/MARTe2-utils
 export MARTe2_Utils_Dependencies_Installed_File=${MARTe2_PROJECT_ROOT}/marte2-utils.deps.installed
