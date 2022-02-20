@@ -7,7 +7,7 @@
 # REF : https://stackoverflow.com/questions/57426500/list-directories-at-a-specific-path-as-autocomplete-options-for-a-bash-script
 # The following stackoverflow answer falls down on the underscore functions not being recognised : TO FIX
 
-configs()
+_configs()
 {
 	local cfgs cur
 	cfgs=$(ls -1 ${MARTe2_CONFIG_DIR}/*.cfg | while read f; do echo $(basename $f); done)
