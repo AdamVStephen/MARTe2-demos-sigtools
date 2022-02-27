@@ -1,0 +1,3 @@
+[submodule "MARTe2-doctools"]
+	path = MARTe2-doctools
+	url = https://github.com/AdamVStephen/MARTe2-doctools
