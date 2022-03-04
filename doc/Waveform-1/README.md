@@ -1,9 +1,10 @@
-# MARTe Demos Sigtools
+# MARTe Demo : Waveform-1
 
 There are two sets of example MARTe2 applications building towards an end to
 end demonstration of standard signal processing tasks.  This top level documentation
 describes what each example shows and how to run and exploit them.
 
+## Run Instructions
 The following tests use docker image avstephen/marte2-demos-sigtools-ubuntu1804:ayr
 
 To run one example from scratch, use the following example
@@ -34,21 +35,12 @@ and you should be able to do this as per the earlier training.
 The documentation links below give more detailed instructions about
 what each example does and how to put each through its paces.
 
+## Waveform Examples
 
 ## FileWriter Examples
 
-1. [FileWriter-1](FileWriter-1/README.md) with a demo video on [YouTube](https://www.youtube.com/watch?v=-GuBPVnREkc) 
-1. [FileWriter-2](FileWriter-2/README.md)
-1. [FileWriter-3](FileWriter-3/README.md)
-1. [FileWriter-4X](FileWriter-4X/README.md) - beware 4X - this is a set of intentional dead ends as a pedagogical technique.
-
-## Waveform Examples
 
 
-## Basic Skills
 
-The following skills and understanding are assumed as a prerequisite to avoid getting stuck in running the examples.
 
-1. [MARTe2 Basics](MARTe2_Basics.md)
-1. [EPICS Basics](EPICS_Basics.md)
 
