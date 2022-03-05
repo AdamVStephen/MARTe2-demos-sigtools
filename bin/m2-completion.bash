@@ -36,7 +36,7 @@ complete -F _epicsdbs m2ioc
 # TODO: refactor out the duplication.
 _anyconfig()
 {
-	local any cur
+	local dbs cfgs cur
 	dbs=$(ls -1 ${MARTe2_CONFIG_PATH}/*.db| while read f; do echo $(basename $f); done)
 	cfgs=$(ls -1 ${MARTe2_CONFIG_PATH}/*.cfg | while read f; do echo $(basename $f); done)
 	cur=${COMP_WORDS[COMP_CWORD]}
@@ -45,4 +45,4 @@ _anyconfig()
 }
 
 
-complete -F _epicsdbs m2edit
+complete -F _anyconfig m2edit
