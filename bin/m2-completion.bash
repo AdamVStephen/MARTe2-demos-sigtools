@@ -45,4 +45,4 @@ _anyconfig()
 }
 
 
-complete -F _epicsdbs m2edit
+complete -F _anyconfig m2edit
