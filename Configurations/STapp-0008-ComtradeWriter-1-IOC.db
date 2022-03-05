@@ -1,0 +1,20 @@
+record( longin, "ComtradeWriter-1:STATUS")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "ComtradeWriter-1:COMMAND")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "ComtradeWriter-1:FILE")
+{
+   field(DTYP, "Soft Channel")
+}
+
+record( longin, "ComtradeWriter-1:RESET")
+{
+   field(DTYP, "Soft Channel")
+}
+

@@ -27,7 +27,7 @@ if [ -z ${MARTe2_Components_DIR+x} ]; then
 export MARTe2_Components_DIR=~/Projects/MARTe2-components
 fi
 
-D_LIBRARY_PATH=$LD_LIBRARY_PATH:$MARTe2_DIR/Build/x86-linux/Core/
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MARTe2_DIR/Build/x86-linux/Core/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MARTe2_Components_DIR/Build/x86-linux/Components/DataSources/EPICSCA/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MARTe2_Components_DIR/Build/x86-linux/Components/DataSources/EPICSPVA/
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MARTe2_Components_DIR/Build/x86-linux/Components/DataSources/LinuxTimer/
@@ -67,6 +67,11 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SDN_CORE_LIBRARY_DIR
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$EPICS_BASE/lib/$EPICS_HOST_ARCH
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SDN_CORE_LIBRARY_DIR
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CODAC_ROOT/lib/
+
+# TODO: review whether this should all be greatly simplified e.g. by installation to /opt/Components
+#     : check what the best practice from ITER and rpm file definitions suggests
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${MARTe2_ACTIVE_PROJECT}/MARTe2-incubator/Build/x86-linux/Components/DataSources/ComtradeDataSource
 
 echo $LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH
