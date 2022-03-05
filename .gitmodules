@@ -1,3 +1,6 @@
 [submodule "MARTe2-doctools"]
 	path = MARTe2-doctools
 	url = https://github.com/AdamVStephen/MARTe2-doctools
+[submodule "MARTe2-incubator"]
+	path = MARTe2-incubator
+	url = https://github.com/AdamVStephen/MARTe2-incubator
