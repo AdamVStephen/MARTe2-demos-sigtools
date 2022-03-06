@@ -1,0 +1,30 @@
+    1  pushd /keys/
+    2  cat install.sh 
+    3  . install.sh 
+    4  cd -
+    5  ls
+    6  cd ../
+    7  ls
+    8  cd MARTe2-demos-sigtools/
+    9  ls
+   10  cd ..
+   11  ls
+   12  pwd
+   13  cd /root/
+   14  ls
+   15  cat ~/.ssh/config
+   16  git clone git@github.com-demos-sigtools:AdamVStephen/MARTe2-demos-sigtools /root/
+   17  git clone git@github.com-demos-sigtools:AdamVStephen/MARTe2-demos-sigtools /root/MARTe2-demos-sigtools
+   18  cd /root/MARTe2-demos-sigtools/
+   19  git remote add local /opt/MARTe2/Projects/MARTe2-utils/MARTe2-demos-sigtools/
+   20  ls
+   21  git branch
+   22  git checkout main
+   23  ls
+   24  ls -al
+   25  git branch -a
+   26  git checkout barrhead
+   27  ls
+   28  cd .patches/
+   29  ls
+   30  history 30 > ssh-stuff
